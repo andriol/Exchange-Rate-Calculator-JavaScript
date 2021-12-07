@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background-image: url("/exchange-rate-calculator/images/currency-image.png");
+  background-size: cover;
+}
+.container {
+  display: grid;
+  place-items: center;
+  min-height: 97vh;
+}
+.container__main-image {
+  height: 250px;
+  width: 250px;
+}
+.container__rate-swap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+h1 {
+  font-size: 3rem;
+  color: #288ba8;
+}
+p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.currency {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.currency input {
+  border: 0;
+  background: transparent;
+  text-align: right;
+  font-size: 30px;
+}
+.rate {
+  color: #5fbaa7;
+  font-size: 20px;
+  padding-right: 15px;
+}
+.btn {
+  border: 1px solid gray;
+  background-color: #5fbaa7;
+  color: white;
+  border-radius: 10px;
+}
+.btn:hover {
+  background-color: white;
+  color: #5fbaa7;
+}

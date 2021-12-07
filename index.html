@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Exchange Rate Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        class="container__main-image"
+        src="images/exchange-rate.png"
+        alt="currency image"
+      />
+
+      <div class="card">
+        <h1>Exchange Rate Calculator</h1>
+        <p>Choose the currency and the amount</p>
+        <div class="currency">
+          <select name="" class="base-currency" id="base-currency">
+            <option value="AED">AED</option>
+            <option value="ALL">ALL</option>
+            <option value="ARS">ARS</option>
+            <option value="AUD">AUD</option>
+            <option value="BGN">BGN</option>
+            <option value="BRL">BRL</option>
+            <option value="BSD">BSD</option>
+            <option value="CAD">CAD</option>
+            <option value="CHF">CHF</option>
+            <option value="CLP">CLP</option>
+            <option value="CNY">CNY</option>
+            <option value="CZK">CZK</option>
+            <option value="EUR" selected>EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="NZD">NZD</option>
+            <option value="USD">USD</option>
+          </select>
+          <input type="number" id="number-one" placeholder="0" value="1" />
+        </div>
+        <div class="container__rate-swap">
+          <button class="btn" id="swap">Swap</button>
+          <div class="rate" id="rate"></div>
+        </div>
+        <div class="currency">
+          <select name="" class="target-currency" id="target-currency">
+            <option value="AED">AED</option>
+            <option value="ALL">ALL</option>
+            <option value="ARS">ARS</option>
+            <option value="AUD">AUD</option>
+            <option value="BGN">BGN</option>
+            <option value="BRL">BRL</option>
+            <option value="BSD">BSD</option>
+            <option value="CAD">CAD</option>
+            <option value="CHF">CHF</option>
+            <option value="CLP">CLP</option>
+            <option value="CNY">CNY</option>
+            <option value="CZK">CZK</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="NZD">NZD</option>
+            <option value="USD" selected>USD</option>
+          </select>
+          <input type="number" id="number-two" placeholder="0" />
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
